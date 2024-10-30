@@ -1,0 +1,112 @@
+html,
+body {
+  margin: 0;
+}
+@media print {
+  #c_btn_print {
+    display: none;
+  }
+  .type {
+    background-color: #000;
+    -webkit-print-color-adjust: exact;
+    color: #fff;
+  }
+}
+@page {
+  margin: 3mm;
+  font-size: 0.8rem;
+}
+#c_btn_print {
+  width: 100%;
+  text-align: right;
+}
+#btn_print_screen {
+  margin-top: 20px;
+  margin-right: 20px;
+
+  padding: 7px;
+  background: #fff;
+  color: #013445;
+  border-radius: 5px;
+  border: 1px solid #013445;
+  font-size: 1em;
+}
+#btn_print_screen:hover {
+  cursor: pointer;
+  background: #013445;
+  color: #fff;
+  border: 1px solid #fff;
+  transition: 0.4s;
+}
+#print {
+  display: none;
+}
+.table_print {
+  width: 120mm;
+  /* height: 80mm; */
+  /* border: 1px solid #ccc; */
+}
+td {
+  font-size: 0.8rem;
+  vertical-align: top;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.logo {
+  width: 3.5cm;
+  height: 0.75cm;
+}
+.package {
+  margin-top: 5px;
+}
+.type {
+  margin-top: 2px;
+  text-align: center;
+  background: #000;
+  color: #fff;
+  font-weight: bold;
+  padding: 3px;
+  width: 50%;
+}
+.date {
+  margin-top: 4px;
+}
+.qr {
+  width: 3.5cm;
+  height: 3.5cm;
+  margin-top: 2px;
+}
+.code {
+  font-size: 0.7rem;
+  margin-top: 2px;
+}
+.payment {
+  margin-top: 2px;
+  font-size: 0.7rem;
+}
+.left_col {
+  width: 3.8cm;
+  display: grid;
+}
+.right_col {
+}
+.t {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.c {
+  font-weight: bold;
+}
+.c:after {
+  content: " ";
+}
+.signature {
+  border-bottom: 1px solid #000;
+}
+.p_break {
+  page-break-before: always;
+}
+.info {
+  font-size: 0.68rem;
+}
+.info_right {
+}
